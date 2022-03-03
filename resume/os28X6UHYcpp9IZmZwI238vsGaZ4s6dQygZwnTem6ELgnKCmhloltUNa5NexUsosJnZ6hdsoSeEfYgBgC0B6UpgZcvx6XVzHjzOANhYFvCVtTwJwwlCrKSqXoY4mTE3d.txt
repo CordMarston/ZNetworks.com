@@ -1,0 +1,65 @@
+DIMITRY G. VERKHOLASHIN
+Technical Consultant
+dver666@att.net
+
+EXPERIENCE:
+Employer: SBM Kompleat Services (2017-2018, Seattle, WA US)
+Job Title: PC Technician
+MAC Team: Disconnected, reconnected and decommissioned workstations
+
+Employer: Intel (2015, Hillsboro, OR US)
+Job Title: Test Engineer
+Win SoC Watch QA Team: Tested Python-based automation framework
+
+Employer: Kavi (2014, Portland, OR US)
+Job Title: QA Engineer
+Development Team: Assured quality of web-based collaboration application in Agile Scrum environment. Created UI test plans. Developed test cases for existing and newly implemented features. Provided weekly status reports. Filed bugs
+
+Employer: SBM Kompleat Services (2013, Seattle, WA US)
+Job Title: PC Technician
+Amazon MAC Team: Disconnected and reconnected workstations
+
+Employer: Blue Nile (2013, Seattle, WA US)
+Job Title: QA Engineer
+QA Team: Tested responsive web software. Filed product bugs
+
+Employer: Three Monkeys Lab (2011-2012, Seattle, WA US)
+Job Title: Researcher
+TML R&D: Conducted independent research in area of network infrastructure security focusing on ubiquitous TPM chipset hardware and its application in distributed computing environments
+
+Employer: Lionbridge Technologies
+Client: Microsoft (2010-2011, Redmond, WA US)
+Job Title: Software Test Engineer
+OEM Consulting Team: Tested demonstration software application suite on provided slate tablet. Participated in daily Scrum meetings with stakeholders. Performed manual testing to assure software suite is robust. Filed product bugs
+
+Employer: CompuCom Excell Data
+Client: Microsoft (2007-2008, Redmond, WA US)
+Job Title: Software Test Engineer
+Hyper-V Performance Team: Run manual and automatic tests to gather server virtualization performance statistics under different workloads and scenarios. Configured test bed debuggers, servers, KVMs, switches for test execution. Acquired performance results when WTT automation harness workflow instances malfunctioned. Filed automation bugs
+
+Kernel PNP Team: Scheduled and troubleshot automatic regression tests in enterprise campus lab setting. Escalated regression break results to developers to confirm product issues and filed product bugs upon confirmation. Tested with provided WTT test cases, determined exact reproduction steps and suggested test case changes. Performed manual PnP testing of FC HBA vendor cards to verify hot swap functionality
+
+Employer: Lionbridge Technologies
+Client: Microsoft (2005, Redmond, WA US)
+Job Title: Software Test Engineer
+NAP Client Team: Tested Network Access Protection feature to assure quality. Managed lab bench debuggers, workstations, KVMs, network switches and associated cabling. Unboxed and racked servers. Scheduled long haul and regression WTT tests. Reported product and automation bugs
+
+EDUCATION:
+College: Royal Holloway University of London (2010, Egham, Surrey UK)
+Degree: Master of Science in Information Security
+
+PROFESSIONAL DEVELOPMENT:
+College: UC Berkley Extension (Online)
+Course: X442.3 Python Programming (2011)
+
+College: University of Washington PCE (Seattle, WA US)
+Certification: Certificate in Python Programming (2012)
+
+TECHNICAL SKILLS:
+ISO/IEC 2700x, TCP/IP, NTP, DHCP, HKP, mDNS/DNS-SD, SSH, SSL/TLS, HTTP, OOP, Python, unittest, rednose, coverage, doctest, lettuce, Latex, HTML, CSS, git, apt, bazaar, GnuPG/PGP, bash, ipfw, pf, iptables, ufw, Wireshark, UNIX/Linux, Windows Server, WTT, Sharepoint, Apache, WebDAV, Desktopcouch, WebKit, Jira, Confluence, Zephyr
+
+LEGAL STATUS:
+US Citizen
+
+PERSONAL:
+Willing to relocate

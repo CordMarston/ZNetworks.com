@@ -1,0 +1,58 @@
+<?php 
+$title = ' - Our Team';
+include('includes/header.inc.php');?>
+<div class="bd-example">
+  <div id="headerSlider" class="carousel slide" data-ride="carousel">
+
+    <div class="carousel-inner">
+      <div class="carousel-item active" style="background-image:url('img/team-slide3-2.jpg');  background-size:cover; ">
+        <div class="carousel-caption d-flex">
+           <div class="col align-baseline text-center position-absolute fixed-bottom mb-md-5">
+			<h1 class="superh1">Great IT Support</h1>
+			<h2 class="superh2">Starts With a Great Team</h2>
+			<p class="text-uppercase">Our team is committed to contribute to your success.</p>
+			</div>
+        </div>
+      </div>
+    
+    </div>
+
+  </div>
+</div>
+<section class="employees">
+	<div class="container pb-5">
+		
+			
+			<?php
+			mysql_connect("localhost", "znetworks", "utaqavaze") or die(mysql_error());
+			mysql_select_db("zadmin_employees") or die(mysql_error());
+			
+			$count = 0;
+			$getE = mysql_query("SELECT * FROM employees WHERE active='0' ORDER BY firstname ASC");
+			while($e = mysql_fetch_array($getE)) {
+				
+				if($count == 0) {
+					echo '<div class="row">';
+				}
+				echo '<div class="col-md-4 text-center mb-md-0 mb-3 pt-5">';
+					echo '<img src="'.$e['picture'].'" alt="'.$e['firstname'].' '.$e['lastname'].'" class="w-100 pb-3">';
+					echo '<h4>'.$e['firstname'].' '.$e['lastname'].'</h4>';
+					echo '<p class="text-uppercase text-secondary">'.$e['title'].'</p>';
+					echo '<p class="text-secondary text-left">From: '.$e['fromCity'].', '.$e['fromState'].'</p>';
+					echo '<p class="text-secondary text-left">Location: '.$e['currentCity'].', '.$e['currentState'].'</p>';
+					// echo '<p class="employee-desc text-left p-2">'.$e['bio'].'</p>';
+					echo '<a href="#" class="btn btn-primary viewBio" employee="'.$e['id'].'" name="'.$e['firstname'].' '.$e['lastname'].'">More About '.$e['firstname'].'</a>';
+				echo '</div>';
+				
+				if($count == 2) {
+					echo '</div>';
+				}
+				$count++;
+				if($count == 3) {
+					$count = 0;
+				}
+			}
+			?>
+		</div>
+</section>
+<?php include('includes/footer.inc.php');?>

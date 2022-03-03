@@ -1,0 +1,15 @@
+RewriteEngine on 
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php [NC,L]
+RewriteEngine On
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://www.znetworks.com/$1 [R,L]
+ErrorDocument 404 /
+
+<Files admin2.php>
+AuthType Basic
+AuthName "Authentication Required"
+AuthUserFile /var/sentora/hostdata/zinternal/public_html/.htpasswd
+Require valid-user
+</Files>

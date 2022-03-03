@@ -1,0 +1,27 @@
+# GIT
+
+Pushing Master back to SVN is done with this command:
+
+	git svn dcommit
+
+# SVN
+
+Getting the latest trunk version in the SVN master repo
+
+	svn update
+
+
+Pushing changes in Trunk to the repo
+
+	svn ci -m "comment"
+
+Tagging a new Release
+
+	svn cp trunk tags/1.0.1
+	svn ci -m "comment"
+
+# WP.ORG
+
+	Make sure to update readme.txt to match the release with the "STABLE" and "CHANGE LOG" Areas 
+	and that the main PHP CLASS file has updated VERSION too.
+

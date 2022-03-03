@@ -1,0 +1,61 @@
+<?php 
+$title = ' - Our Team';
+include('includes/header.inc.php');
+mysql_connect("localhost", "znetworks", "utaqavaze") or die(mysql_error());
+mysql_select_db("zadmin_employees") or die(mysql_error());
+$getRandom = mysql_query("SELECT firstname, lastname, picture, whyZ FROM employees WHERE whyZ!='' AND active='0' AND picture!='' ORDER BY RAND() LIMIT 1");
+$e = mysql_fetch_array($getRandom);
+?>
+<style>.blockquote-footer {color:#fff;}</style>
+<section class="team pt-5 pb-5 bg-primary text-white">
+	<div class="container">
+		<div class="employeeHolder text-white">
+			<?php include('assets/employee-spotlight.php');?>
+		</div>
+</section>
+<section class="employees">
+	<div class="container pb-5">
+		
+			
+			<?php
+			
+			
+			$count = 0;
+			$getE = mysql_query("SELECT * FROM employees WHERE active='0' ORDER BY firstname ASC");
+			while($e = mysql_fetch_array($getE)) {
+				
+				if($count == 0) {
+					echo '<div class="row">';
+				}
+				if($count == 0) {
+					echo '<div class="col-md-3 col-6 text-center mb-md-0 mb-3 pt-5">';
+				} else {
+					echo '<div class="col-md-3 col-6 text-center mb-md-0 mb-3 pt-5">';	
+				}
+				
+					echo '<div style="min-height:335px;"><img src="'.$e['picture'].'" alt="'.$e['firstname'].' '.$e['lastname'].'" class="w-100 pb-3"></div>';
+					echo '<h6>'.$e['firstname'].' '.$e['lastname'].'</h6>';
+					echo '<p class="text-uppercase text-secondary text-10" style="font-size:13px; min-height:40px;">'.$e['title'].'</p>';
+					echo '<p class="text-secondary text-left" style="font-size:12px;">From: '.$e['fromCity'].', '.$e['fromState'].'</p>';
+					echo '<p class="text-secondary text-left" style="font-size:12px;">Location: '.$e['currentCity'].', '.$e['currentState'].'</p>';
+					// echo '<p class="employee-desc text-left p-2">'.$e['bio'].'</p>';
+					echo '<a href="#" class="btn btn-primary viewBio" employee="'.$e['id'].'" name="'.$e['firstname'].' '.$e['lastname'].'" style="font-size:12px;">More About '.$e['firstname'].'</a>';
+				echo '</div>';
+				
+				if($count == 3) {
+					echo '</div>';
+				}
+				$count++;
+				if($count == 4) {
+					$count = 0;
+				}
+			}
+			while($count < 4) {
+				echo '<div class="col"></div>';
+				$count++;
+			}
+			echo '</div>';
+			?>
+		</div>
+</section>
+<?php include('includes/footer.inc.php');?>

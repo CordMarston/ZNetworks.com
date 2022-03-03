@@ -1,0 +1,32 @@
+
+
+RewriteEngine on 
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php [NC,L]
+
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^znetworks\.biz [NC]
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://znetworks.com/$1 [R=301,L]
+
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www.znetworks\.biz [NC]
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://znetworks.com/$1 [R=301,L]
+
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^znetworks\.com [NC]
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://znetworks.com/$1 [R=301,L]
+
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www.znetworks\.com [NC]
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://znetworks.com/$1 [R=301,L]
+
+
+
+RewriteEngine On
+ErrorDocument 404 /
+
