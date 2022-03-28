@@ -283,9 +283,9 @@ $e = mysql_fetch_array($getRandom);
 										</div>
 										<div class="col-md-4">
 											<div class="card" style="width: 100%;">
-												<img class="card-img-top" src="/img/employees/Patty.jpg" alt="Patty Anderson">
+												<img class="card-img-top" src="/img/employees/Jasmine-Younglood.jpg" alt="Patty Anderson">
 												<div class="card-body">
-													<h6 class="card-text text-center">Patty Anderson</h6>
+													<h6 class="card-text text-center">Jasmin Youngblood</h6>
 												</div>
 											</div>
 										</div>

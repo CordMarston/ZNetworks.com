@@ -82,7 +82,7 @@
 	<div class="container">
 		<div class="row py-4">
 			<div class="col-md-3 p-3 text-white">
-				<p class="pb-2"><img src="img/logo-white.png" style="width:80%;"></p>	
+				<p class="pb-2"><img src="/img/logo-white.png" style="width:80%;"></p>	
 				<p class="font-weight-bold pt-3">Sales</p>
 				<div class="row">
 					<div class="col-2">

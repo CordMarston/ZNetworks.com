@@ -4,16 +4,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-<link rel="stylesheet" href="css/znws_premin.css" async>
-<link rel="stylesheet" href="css/bootstrap.css" async>
-<link rel="stylesheet" href="css/all.min.css" async>
-<link rel="stylesheet" href="css/jquery-confirm.css" async>
-<link rel="stylesheet" href="css/fa.css" async>
+<link rel="stylesheet" href="/css/znws_premin.css" async>
+<link rel="stylesheet" href="/css/bootstrap.css" async>
+<link rel="stylesheet" href="/css/all.min.css" async>
+<link rel="stylesheet" href="/css/jquery-confirm.css" async>
+<link rel="stylesheet" href="/css/fa.css" async>
 
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.min.js" async></script>
-<script src="js/my.js" async></script>
-<script src="js/jquery-confirm.js" async></script>
+<script src="/js/jquery.min.js"></script>
+<script src="/js/bootstrap.min.js" async></script>
+<script src="/js/my.js" async></script>
+<script src="/js/jquery-confirm.js" async></script>
 <script type="application/ld+json" async>
 {
   "@context": "https://schema.org",
@@ -29,7 +29,7 @@
   ] 
 }
 </script> 
-<script async defer src="assets/maps.js" async></script>
+<script async defer src="/assets/maps.js" async></script>
 </head>
 <body>
 <div id="fb-root"></div>
@@ -38,7 +38,7 @@
 	<div class="container">
 		<div class="row py-4">
 			<div class="col-md-3 ">
-				<a href="/"><img src="img/znetworks-logo.png" style="width:100%;"></a>
+				<a href="/"><img src="/img/znetworks-logo.png" style="width:100%;"></a>
 			</div>
 			<div class="col-md-1"></div>
 			<div class="col-md-4 mt-1">
@@ -67,7 +67,7 @@
 	<div class="container d-flex align-items-center">
 		<div class="row-fluid d-md-none">
 			<div class="col-9 d-inline-block float-left">
-			<a href="index.php"><img src="img/znetworks-logo.png" style="width:100%;"></a>
+			<a href="index.php"><img src="/img/znetworks-logo.png" style="width:100%;"></a>
 			</div>
 			<div class="col-3 d-inline-block float-right text-right align-right pt-3">
 			<div style="float:right;">
